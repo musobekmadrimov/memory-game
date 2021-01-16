@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Try to Remember Game by Musobek Madrimov</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="whoCoded">
+            <h1>developed by <span class="redText"> Musobek Madrimov</span></h1>
+            <p>
+                <h3>A1TechGroup LLC,</h3> Central Asia, Uzbekistan, Khorezm, Urgench, str. Al-Khorezmi
+            </p>
+        </div>
+        <button id="myButton" onclick="startGame()">Let's Start the Game, if you Ready!</button>
+        <h3 class="" id="startingText"></h3>
+        <button id="letsGoButton" onclick="letsGo()">LET'S GO!</button>
+        <p id="randomArrayDOC"></p>
+        <input type="number" id="userAnswer" placeholder="Type your answer.."
+            onKeyPress="if(this.value.length==10) return false;">
+        <button id="answerButton" onclick="receiveAnswer()">SEND ANSWER</button>
+        <p id="trueAnswerDOC"></p>
+        <p id="userAnswerDOC"></p>
+        <h3 id="result"></h3>
+        <button id="restartButton" onclick="restartGame()">RESTART GAME</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
